@@ -1,0 +1,35 @@
+// Hero Landing Page
+.hero-landing {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  .hero-landing__content-wrapper {
+    text-align: center;
+    position: absolute;
+    z-index: 100;
+    h2,
+    h4 {
+      color: $textColor;
+    }
+
+    .text-primary {
+      color: $primaryColor !important;
+    }
+    .btn {
+      background-color: $primaryColor;
+      color: $secondaryColor;
+    }
+  }
+  .video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(34, 34, 34, 0.8313725490196079);
+    width: 100%;
+    height: 100vh;
+  }
+}

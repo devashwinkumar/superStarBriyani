@@ -1,0 +1,16 @@
+@import "./variables";
+@import "./mixins";
+
+.btn {
+  background: $primaryColor;
+}
+.nooo {
+  display: none;
+}
+
+@import "./navBar";
+@import "./heroLanding";
+
+.page-content {
+  margin-left: 300px;
+}

@@ -1,0 +1,35 @@
+//Nav Bar Styling
+.side-nav.side-nav--secondary {
+  padding: 0;
+  background-color: $secondaryColor;
+  background-image: none !important;
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  z-index: 99999;
+  /* left: -320px; */
+  overflow-x: hidden;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  border: 0 none;
+  border-radius: 0;
+  @include positionCenter();
+}
+
+/* Desktop Logo Styling */
+.side-nav__logo-wrapper {
+  width: 100%;
+  height: auto;
+  padding: 0 20px;
+  a {
+    text-align: center;
+    display: block;
+  }
+  a img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+  }
+}
