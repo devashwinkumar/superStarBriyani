@@ -12,9 +12,10 @@
 
     <!-- FAV ICON -->
     <link rel="icon" href="images\favicon\favicon.ico" type="image/x-icon" />
-    <link rel="shortcut icon" type="image/x-icon" href="images\favicon.png" />
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="images\favicon.png" /> -->
 
     <!-- STYLE SHEETS -->
+    <!-- PLUGIN (Incomplete) -->
     <link rel="stylesheet" type="text/css" href="css\plugins.css" />
     <link rel="stylesheet" type="text/css" href="css\style.css" />
   </head>
@@ -23,7 +24,8 @@
     <main class="wrapper">
       <!-- LOADING AREA -->
       <div id="loading"></div>
-      <header class="header header--sticky header--secondary">
+      <!-- MOBILE HEADER  (Incomplete)-->
+      <header class="header header--sticky header--secondary nooo">
         <div class="container-fluid clearfix">
           <div class="logo logo--mobile">
             <a href="#">
@@ -35,6 +37,65 @@
           </div>
         </div>
       </header>
+      <aside class="side-nav side-nav--fixed side-nav--secondary">
+        <div class="side-nav__logo-wrapper">
+          <a href="#">
+            <img
+              src="images/Desktop Logo.png"
+              alt="Desktop Site Logo"
+              width="193"
+              height="89"
+            />
+          </a>
+        </div>
+        <div class="clearfix"></div>
+        <div class="side-nav__nav-links">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Our Menu</a></li>
+            <li><a href="#">Order Online</a></li>
+            <li><a href="#">Reserve Now</a></li>
+          </ul>
+        </div>
+        <div class="clearfix"></div>
+        <div class="side-nav__social-links">
+          <ul class="list-inline footer-social text-center m-b0">
+            <li>
+              <a href="#" class="fa fa-facebook"></a>
+            </li>
+            <li>
+              <a href="#" class="fa fa-twitter"></a>
+            </li>
+            <li>
+              <a href="#" class="fa fa-linkedin"></a>
+            </li>
+            <li>
+              <a href="#" class="fa fa-google-plus"></a>
+            </li>
+          </ul>
+        </div>
+        <p class="copyright">© Copyright 2020</p>
+        <p class="copyright-text">Design With By <span>Singularity</span></p>
+      </aside>
+
+      <section class="page-content">
+        <div class="hero-landing">
+          <div class="hero-landing__content-wrapper">
+            <span class="text-primary">Super Star Briyani</span>
+            <h2 class="title">Catch!</h2>
+            <h4 class="sub-title">The Most Stylish Briyani In Perth</h4>
+            <a href="#" class="btn">ORDER ONLINE</a>
+            <a href="#" class="btn-secondry">RESERVE A TABLE!</a>
+          </div>
+          <div class="video-container">
+            <div class="video-overlay"></div>
+            <video autoplay loop muted>
+              <source src="videos/Super Star Briyani.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>
