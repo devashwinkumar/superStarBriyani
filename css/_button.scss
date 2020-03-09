@@ -1,0 +1,18 @@
+.btn {
+  outline: none;
+  padding: 12px 30px;
+  border-color: transparent;
+}
+.btn-primary {
+  background-color: $primaryColor;
+  color: $secondaryColor;
+}
+.btn-secondary {
+  background-color: $secondaryColor;
+  color: $textColor;
+}
+.btn::before {
+  font-family: FontAwesome;
+  content: "\f005";
+  margin-right: 5px;
+}

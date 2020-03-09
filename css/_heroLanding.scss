@@ -15,14 +15,13 @@
     h4 {
       color: $textColor;
     }
-
     .text-primary {
       color: $primaryColor !important;
     }
-    .btn {
-      background-color: $primaryColor;
-      color: $secondaryColor;
-    }
+    // .btn {
+    //   background-color: $primaryColor;
+    //   color: $secondaryColor;
+    // }
   }
   .video-overlay {
     position: absolute;
