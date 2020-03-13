@@ -1,38 +1,20 @@
 @import "./variables";
 @import "./mixins";
 
-.btn {
-  background: $cOne;
-}
+// General
 .nooo {
   display: none;
 }
-
-.pt-100 {
-  padding-top: 100px;
-}
-.pb-90 {
-  padding-bottom: 90px;
-}
-.pr-75 {
-  padding-right: 75px;
-}
-.mb-15 {
-  margin-bottom: 15px;
-}
-.mt-25 {
-  margin-top: 25px;
-}
 h5 {
-  color: $cThree;
+  color: $cOne;
   font-family: $fThree;
 }
 h2 {
-  color: $cTwo;
+  color: $cThree;
   font-family: $fTwo;
 }
 p {
-  color: $cTwo;
+  color: $cThree;
   font-family: $fOne;
 }
 ul {
@@ -42,12 +24,47 @@ ul {
   }
 }
 .color-one {
-  color: $cOne;
+  color: $cOne !important;
 }
 .color-two {
-  color: $cTwo;
+  color: $cTwo !important;
+}
+.color-three {
+  color: $cThree !important;
+}
+.color-four {
+  color: $cFour !important;
+}
+.color-five {
+  color: $cFive !important;
+}
+.bg-color-five {
+  background-color: $cFive !important;
+}
+
+//Padding
+.pt-100 {
+  padding-top: 100px;
+}
+.pb-90 {
+  padding-bottom: 90px;
+}
+.pr-75 {
+  padding-right: 75px;
+}
+
+//Margin
+.mb-15 {
+  margin-bottom: 15px;
+}
+.mt-25 {
+  margin-top: 25px;
+}
+.mb-30 {
+  margin-bottom: 30px;
 }
 
 @import "./navBar";
 @import "./heroLanding";
 @import "./button";
+@import "./aboutUs";

@@ -42,7 +42,7 @@
 
 .side-nav.side-nav--secondary {
   @include padTopBot20();
-  background-color: $cTwo;
+  background-color: $cThree;
   background-image: none !important;
   height: 100%;
   width: 300px;
@@ -94,13 +94,13 @@
       padding: 15px;
       line-height: 15px;
       display: block;
-      color: $cThree;
+      color: $cFour;
     }
     a.active {
       color: $cOne;
     }
     a:hover {
-      color: $cTwo;
+      color: $cThree;
       background-color: $cOne;
       text-decoration: none;
     }
@@ -117,7 +117,7 @@
     display: inline-block;
     padding: 0 2px;
     a {
-      color: $cThree;
+      color: $cFour;
       text-decoration: none;
       font-size: 18px;
     }
@@ -127,7 +127,7 @@
   p {
     font-size: 12px;
     text-align: center;
-    color: $cThree;
+    color: $cFour;
   }
   .author {
     opacity: 0.5;

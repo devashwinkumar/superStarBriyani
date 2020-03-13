@@ -1,0 +1,40 @@
+ul {
+  li {
+    opacity: 0.75;
+    span {
+      margin-left: 6px;
+    }
+  }
+}
+.restaurant-image-wrapper {
+  position: relative;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    height: 145px;
+    width: 155px;
+    z-index: -1;
+    background-color: $cOne;
+    opacity: 0.5;
+  }
+}
+.restaurant-image-wrapper {
+  &:before {
+    top: -20px;
+    left: -20px;
+  }
+  &:after {
+    right: -20px;
+    bottom: -20px;
+  }
+}
+.restaurant-greeting-wrapper {
+  padding: 15px;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  max-width: max-content;
+  border-right: 5px solid #000;
+  background-color: $cFour;
+}
