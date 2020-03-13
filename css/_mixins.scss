@@ -1,9 +1,3 @@
-@mixin positionCenter() {
-  top: 0;
-  left: 0;
-  background-position: center;
-}
-
 @mixin padTopBot20 {
   padding: 20px 0;
 }

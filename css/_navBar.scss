@@ -1,13 +1,54 @@
 /*Nav Bar Styling */
+
+.hamburger {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50px;
+  height: 35px;
+  cursor: pointer;
+  position: absolute;
+  left: 2%;
+  top: 4%;
+  z-index: 1;
+  div {
+    align-self: flex-start;
+    height: 6px;
+    width: 100%;
+    background: #fff;
+  }
+  .meat {
+    width: 75%;
+    transition: all 200ms ease-in-out;
+  }
+  .bottom-bun {
+    width: 50%;
+    transition: all 400ms ease-in-out;
+  }
+}
+
+@keyframes burger-hover {
+  0% {
+    width: 100%;
+  }
+  50% {
+    width: 50%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
 .side-nav.side-nav--secondary {
   @include padTopBot20();
-  background-color: $secondaryColor;
+  background-color: $cTwo;
   background-image: none !important;
   height: 100%;
   width: 300px;
   position: fixed;
   z-index: 99999;
-  /* left: -320px; */
+  left: -320px;
   overflow: hidden;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
@@ -15,7 +56,8 @@
   -o-transition: all 0.5s;
   border: 0 none;
   border-radius: 0;
-  @include positionCenter();
+  top: 0;
+  background-position: center;
 }
 
 /* Desktop Logo Styling */
@@ -52,14 +94,14 @@
       padding: 15px;
       line-height: 15px;
       display: block;
-      color: $textColor;
+      color: $cThree;
     }
     a.active {
-      color: $primaryColor;
+      color: $cOne;
     }
     a:hover {
-      color: $secondaryColor;
-      background-color: $primaryColor;
+      color: $cTwo;
+      background-color: $cOne;
       text-decoration: none;
     }
   }
@@ -75,7 +117,7 @@
     display: inline-block;
     padding: 0 2px;
     a {
-      color: $textColor;
+      color: $cThree;
       text-decoration: none;
       font-size: 18px;
     }
@@ -85,9 +127,17 @@
   p {
     font-size: 12px;
     text-align: center;
-    color: $textColor;
+    color: $cThree;
   }
   .author {
     opacity: 0.5;
   }
+}
+
+.side-nav.open {
+  left: 0;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
 }

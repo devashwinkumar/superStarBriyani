@@ -2,15 +2,52 @@
 @import "./mixins";
 
 .btn {
-  background: $primaryColor;
+  background: $cOne;
 }
 .nooo {
   display: none;
 }
 
+.pt-100 {
+  padding-top: 100px;
+}
+.pb-90 {
+  padding-bottom: 90px;
+}
+.pr-75 {
+  padding-right: 75px;
+}
+.mb-15 {
+  margin-bottom: 15px;
+}
+.mt-25 {
+  margin-top: 25px;
+}
+h5 {
+  color: $cThree;
+  font-family: $fThree;
+}
+h2 {
+  color: $cTwo;
+  font-family: $fTwo;
+}
+p {
+  color: $cTwo;
+  font-family: $fOne;
+}
+ul {
+  padding-left: 0;
+  li {
+    list-style: none;
+  }
+}
+.color-one {
+  color: $cOne;
+}
+.color-two {
+  color: $cTwo;
+}
+
 @import "./navBar";
 @import "./heroLanding";
 @import "./button";
-.page-content {
-  margin-left: 300px;
-}

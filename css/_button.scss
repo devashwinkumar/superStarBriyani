@@ -1,18 +1,37 @@
 .btn {
   outline: none;
   padding: 12px 30px;
-  border-color: transparent;
+  border-color: transparent !important;
 }
 .btn-primary {
   background-color: $primaryColor;
   color: $secondaryColor;
 }
 .btn-secondary {
-  background-color: $secondaryColor;
-  color: $textColor;
+  background-color: $cThree;
+  color: $cThree;
+  transition: all 0.5s;
+  outline: none !important;
+  box-shadow: none !important;
 }
-.btn::before {
+.btn:hover::before,
+.btn:hover::after {
   font-family: FontAwesome;
   content: "\f005";
-  margin-right: 5px;
+  margin: 0 5px;
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+  background-color: $cOne !important;
+  color: $cFour !important;
+  box-shadow: none !important;
+}
+.btn-secondary:hover,
+.btn-secondary:active,
+.btn-secondary:focus {
+  background-color: $cThree !important;
+  color: $cOne !important;
+  box-shadow: none !important;
 }
