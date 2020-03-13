@@ -43,6 +43,9 @@ ul {
 }
 
 //Padding
+.p-30 {
+  padding: 30px;
+}
 .pt-100 {
   padding-top: 100px;
 }
@@ -63,8 +66,15 @@ ul {
 .mb-30 {
   margin-bottom: 30px;
 }
+.mtb-20 {
+  margin: 20px 0;
+}
+.mb-70 {
+  margin-bottom: 70px;
+}
 
 @import "./navBar";
 @import "./heroLanding";
 @import "./button";
 @import "./aboutUs";
+@import "./menu";

@@ -1,0 +1,25 @@
+.menu-wrap {
+  position: relative;
+  img {
+    max-width: 100%;
+  }
+}
+.menu-content-wrapper {
+  background-color: $cFour;
+  position: absolute;
+  right: 15px;
+}
+.menu-item-price {
+  float: right;
+}
+.menu-item-name {
+  display: inline-block;
+}
+.menu-image-wrapper,
+.menu-content-wrapper {
+  transition: all 2s ease-out;
+}
+.menu-odd .menu-content-wrapper {
+  left: 15px;
+  z-index: 2;
+}

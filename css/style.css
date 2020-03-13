@@ -49,6 +49,10 @@ ul li {
   background-color: #f5f5f5 !important;
 }
 
+.p-30 {
+  padding: 30px;
+}
+
 .pt-100 {
   padding-top: 100px;
 }
@@ -71,6 +75,14 @@ ul li {
 
 .mb-30 {
   margin-bottom: 30px;
+}
+
+.mtb-20 {
+  margin: 20px 0;
+}
+
+.mb-70 {
+  margin-bottom: 70px;
 }
 
 /*Nav Bar Styling */
@@ -370,5 +382,38 @@ ul li span {
   max-width: max-content;
   border-right: 5px solid #000;
   background-color: #ffffff;
+}
+
+.menu-wrap {
+  position: relative;
+}
+
+.menu-wrap img {
+  max-width: 100%;
+}
+
+.menu-content-wrapper {
+  background-color: #ffffff;
+  position: absolute;
+  right: 15px;
+}
+
+.menu-item-price {
+  float: right;
+}
+
+.menu-item-name {
+  display: inline-block;
+}
+
+.menu-image-wrapper,
+.menu-content-wrapper {
+  -webkit-transition: all 2s ease-out;
+  transition: all 2s ease-out;
+}
+
+.menu-odd .menu-content-wrapper {
+  left: 15px;
+  z-index: 2;
 }
 /*# sourceMappingURL=style.css.map */

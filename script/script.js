@@ -7,13 +7,15 @@ $(document).ready(function() {
     $(".side-nav ").removeClass("open");
   });
 
-  $("div[data-animation=animation_blocks]").each(function() {
-    var i = 0;
-    $(this)
-      .find(".lec_icon_box, .skill-bar-content, .lec_anim_box")
-      .each(function() {
-        $(this).css("transition-delay", "0." + i + "s");
-        i++;
-      });
-  });
+  var s = skrollr.init();
+
+  // $("div[data-animation=animation_blocks]").each(function() {
+  //   var i = 0;
+  //   $(this)
+  //     .find(".lec_icon_box, .skill-bar-content, .lec_anim_box")
+  //     .each(function() {
+  //       $(this).css("transition-delay", "0." + i + "s");
+  //       i++;
+  //     });
+  // });
 });
