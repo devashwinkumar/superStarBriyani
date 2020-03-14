@@ -27,6 +27,7 @@
   background-color: $cOne !important;
   color: $cFour !important;
   box-shadow: none !important;
+  cursor: pointer;
 }
 .btn-secondary:hover,
 .btn-secondary:active,
@@ -34,4 +35,5 @@
   background-color: $cThree !important;
   color: $cOne !important;
   box-shadow: none !important;
+  cursor: pointer;
 }

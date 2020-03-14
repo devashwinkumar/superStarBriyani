@@ -1,0 +1,39 @@
+footer {
+  .section-wrapper {
+    height: 320px;
+    display: table;
+    .vertical-align {
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+
+  h6 {
+    //  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  p {
+    color: $cFour;
+    font-size: 80%;
+    text-align: center;
+
+    span {
+      width: 49%;
+      display: inline-block;
+      text-align: center;
+    }
+  }
+  img {
+    max-width: 60%;
+  }
+  .contact-info p span {
+    width: 80%;
+    &:first-of-type {
+      width: 19%;
+    }
+  }
+  .copyright-section p {
+    font-size: 60%;
+  }
+}

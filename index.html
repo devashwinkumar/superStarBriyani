@@ -13,22 +13,20 @@
 
   <!-- FAV ICON -->
   <link rel="icon" href="images\favicon\favicon.ico" type="image/x-icon" />
-  <!-- <link rel="shortcut icon" type="image/x-icon" href="images\favicon.png" /> -->
 
   <!-- STYLE SHEETS -->
-  <!-- PLUGIN (Incomplete) -->
   <link rel="stylesheet" type="text/css" href="css\plugins.css" />
   <link rel="stylesheet" type="text/css" href="css\style.css" />
 </head>
 
-<body>
-  <main class="wrapper">
-    <!-- LOADING AREA -->
-    <div id="loading"></div>
-    <!-- MOBILE HEADER  (Incomplete)-->
+<body class="wrapper">
 
+  <!-- LOADING AREA -->
+  <div id="loading"></div>
+
+  <!-- HEADER -->
+  <header>
     <div class="hamburger-icon">
-      <!-- <img src="" alt="Hamburger Mobile Icon" /> -->
       <div class="hamburger">
         <div class="top-bun"></div>
         <div class="meat"></div>
@@ -37,7 +35,6 @@
     </div>
 
     <nav class="side-nav side-nav--fixed side-nav--secondary">
-
       <div class="side-nav__logo-wrapper">
         <a href="#">
           <img src="images/Desktop Logo.png" alt="Desktop Site Logo" width="193" height="89" />
@@ -46,11 +43,11 @@
       <div class="clearfix"></div>
       <div class="side-nav__nav-links">
         <ul class="nav">
-          <li><a class="active" href="#">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Our Menu</a></li>
-          <li><a href="#">Order Online</a></li>
-          <li><a href="#">Reserve Now</a></li>
+          <li><a class="nav-item active" href="#home">Home</a></li>
+          <li><a class="nav-item" href="#about-us">About Us</a></li>
+          <li><a class="nav-item" href="#our-menu">Our Menu</a></li>
+          <li><a class="nav-item" href="#">Order Online</a></li>
+          <li><a class="nav-item" href="#">Reserve Now</a></li>
         </ul>
       </div>
       <div class="clearfix"></div>
@@ -71,187 +68,121 @@
         </ul>
       </div>
       <div class="side-nav__copyright-content-wrapper">
-        <p class="copyright">© Copyright 2020</p>
-        <p class="author">Design With By <span>Singularity</span></p>
+        <p class="copyright">© Super Start Biriyani 2020</p>
+        <p class="author">Call Ashwin for your website <a class="color-four" href="tel:+61 422 248">0422 248 948</a></p>
       </div>
 
     </nav>
+  </header>
 
-    <main class="page-content">
-      <section class="hero-landing">
-        <div class="hero-landing__content-wrapper">
-          <h2 class="color-one">Super Star Briyani</h2>
-          <h1 class="title color-four">Catch!</h1>
-          <p class="sub-title color-four">The Most Stylish Briyani In Perth</p>
-          <a href="#" class="btn btn-primary">ORDER ONLINE</a>
-          <a href="#" class="btn btn-secondary">RESERVE A TABLE!</a>
+  <!-- MAIN -->
+  <main class="page-content">
+    <!-- LANDING PAGE -->
+    <section id="home" class="hero-landing">
+      <div class="hero-landing__content-wrapper">
+        <h2 class="color-one">Super Star Briyani</h2>
+        <h1 class="title color-four">Catch!</h1>
+        <p class="sub-title color-four">The Most Stylish Briyani In Perth</p>
+        <span class=" btn btn-primary" data-glf-cuid="2358326c-c2a5-4079-ba2c-aae592053c29"
+          data-glf-ruid="7d423505-9ab8-4f42-b6a6-df4cdca99c5d"> ORDER ONLINE</span>
+        <span class=" reservation btn btn-secondary" data-glf-cuid="2358326c-c2a5-4079-ba2c-aae592053c29"
+          data-glf-ruid="7d423505-9ab8-4f42-b6a6-df4cdca99c5d" data-glf-reservation="true">RESERVE TABLE</span>
+      </div>
+      <!-- Video Container -->
+      <div class="video-container">
+        <div class="video-overlay"></div>
+        <video autoplay loop muted>
+          <source src="videos/Super Star Briyani.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </section>
 
-          <span class="glf-button" data-glf-cuid="2358326c-c2a5-4079-ba2c-aae592053c29"
-            data-glf-ruid="7d423505-9ab8-4f42-b6a6-df4cdca99c5d"> See MENU & Order</span>
-          <span class="glf-button reservation" data-glf-cuid="2358326c-c2a5-4079-ba2c-aae592053c29"
-            data-glf-ruid="7d423505-9ab8-4f42-b6a6-df4cdca99c5d" data-glf-reservation="true"> Table Reservation</span>
-        </div>
-        <div class="video-container">
-          <div class="video-overlay"></div>
-          <video autoplay loop muted>
-            <source src="videos/Super Star Briyani.mp4" type="video/mp4" />
-          </video>
-        </div>
-      </section>
-      <section class="about-us-wrapper pt-100 pb-90 clearfix">
-        <div class="container">
-          <div class="row">
-            <!-- row -->
-            <div class="col-lg-7 col-sm-12">
-              <div class="pr-75">
-                <!-- section title -->
-                <div class="section-title mb-15 clearfix">
-
-                  <h5>Our Story</h5>
-                  <h2 class="title">Welcome To Super Star Biriyani</h2>
-
-                </div>
-                <!-- section title end -->
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in felis ut est blandit vehicula.
-                  Proin nec mauris ac ante elementum vulputate. Cras aliquet fringilla eros, eget semper dolor lacinia
-                  ut. Pellentesque volutpat sed nunc non tempor. In volutpat semper purus.</p>
-                <!-- row-->
-                <div class="row mt-25">
-                  <div class="col-md-6 col-lg-6 col-sm-6">
-                    <ul>
-                      <li><i class="fa fa fa-star color-one"></i><span>Dining area with
-                          sea-face lobby</span></li>
-                      <li><i class="fa fa fa-star color-one"></i><span>High restaurant
-                          waiter services</span></li>
-                      <li><i class="fa fa fa-star color-one"></i><span>Facilities for a
-                          disabled persons</span></li>
-                    </ul>
-                  </div>
-                  <div class="col-md-6 col-lg-6 col-sm-6">
-                    <ul>
-                      <li><i class="fa fa fa-star color-one"></i><span>Dining area with
-                          sea-face lobby</span></li>
-                      <li><i class="fa fa fa-star color-one"></i><span>High restaurant
-                          waiter services</span></li>
-                      <li><i class="fa fa fa-star color-one"></i><span>Facilities for a
-                          disabled persons</span></li>
-                    </ul>
-                  </div>
-                </div>
-                <!-- row end-->
-                <hr class="mb-30 mt-25">
-                <!-- row-->
-                <div class="row">
-                  <div class="col-sm-6 col-lg-6 col-md-4 text-center">
-                    <a href="#" class="btn btn-primary">ORDER ONLINE</a>
-
-                    <!-- <div class="mb-20">
-                      <img src="images\award-one.jpg" class="img-fluid" alt="award">
-                    </div> -->
-                  </div>
-                  <div class="col-sm-6 col-lg-6 col-md-4 text-center">
-                    <!-- <div class="mb-20">
-                      <img src="images\award-two.jpg" class="img-fluid" alt="award">
-
-                    </div> -->
-                    <a href="#" class="btn btn-secondary">RESERVE TABLE</a>
-                  </div>
-                </div>
-                <!-- row end-->
-              </div>
-            </div>
-            <div class="col-lg-5 col-sm-12">
-
-              <!-- ttm_single_image-wrapper -->
-              <div class="restaurant-image-wrapper">
-                <img class="img-fluid" src="images/d_restuarant.jpg" alt="">
-                <div class="restaurant-greeting-wrapper text-right">
-
-                  <!-- featured-content -->
-
-                  <!-- featured-title -->
-                  <h5>Super Star Biriyani</h5>
-
-                  <!-- featured-desc -->
-                  <p>Style &amp; Taste</p>
-
-                </div>
-              </div>
-              <!-- ttm_single_image-wrapper end -->
-
-            </div>
-          </div>
-          <!-- row end -->
-        </div>
-      </section>
-      <section class="our-menu pt-100 pb-90 clearfix bg-color-five">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 text-center">
-              <!-- section title -->
+    <!-- ABOUT US -->
+    <section id="about-us" class="about-us-wrapper pt-100 pb-90 clearfix">
+      <div class="container">
+        <div class="row">
+          <!-- row -->
+          <div class="col-lg-7 col-sm-12">
+            <div class="pr-75">
               <div class="section-title mb-15 clearfix">
-
-                <h5>Style &amp; Taste</h5>
-                <h2 class="title">Our Super Star Menu</h2>
-
+                <h5>Our Story</h5>
+                <h2 class="title">Welcome To Super Star Biriyani</h2>
               </div>
-              <!-- section title end -->
-            </div>
-          </div>
-          <div class="row">
-            <div class="row menu-wrap menu-one mb-70 pt-100 pb-90">
-              <div class="col-md-9 menu-image-wrapper" data-bottom-top="transform:translate3d(0px, 0px, 0px)"
-                data-top-bottom="transform:translate3d(0px, -80px, 0px)">
-                <img src="./images/d_menuTwo.jpg" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in felis ut est blandit vehicula.
+                Proin nec mauris ac ante elementum vulputate. Cras aliquet fringilla eros, eget semper dolor lacinia
+                ut. Pellentesque volutpat sed nunc non tempor. In volutpat semper purus.</p>
+              <!-- row-->
+              <div class="row mt-25">
+                <div class="col-md-6 col-lg-6 col-sm-6">
+                  <ul>
+                    <li><i class="fa fa fa-star color-one"></i><span>Dining area with
+                        sea-face lobby</span></li>
+                    <li><i class="fa fa fa-star color-one"></i><span>High restaurant
+                        waiter services</span></li>
+                    <li><i class="fa fa fa-star color-one"></i><span>Facilities for a
+                        disabled persons</span></li>
+                  </ul>
+                </div>
+                <div class="col-md-6 col-lg-6 col-sm-6">
+                  <ul>
+                    <li><i class="fa fa fa-star color-one"></i><span>Dining area with
+                        sea-face lobby</span></li>
+                    <li><i class="fa fa fa-star color-one"></i><span>High restaurant
+                        waiter services</span></li>
+                    <li><i class="fa fa fa-star color-one"></i><span>Facilities for a
+                        disabled persons</span></li>
+                  </ul>
+                </div>
               </div>
-              <div class="col-md-5 menu-content-wrapper p-30" data-bottom-top="transform:translate3d(0px, 0px, 0px)"
-                data-top-bottom="transform:translate3d(0px, 80px, 0px)">
-                <h2 class="menu-title color-one mtb-20">Biriyani</h2>
-
-                <div class="menu-item-wrapper">
-                  <div class="menu-item-name-price">
-                    <h5 class="menu-item-name color-three">Chicken Biriyani</h5>
-                    <h5 class="menu-item-price color-three">$2.95</h5>
-                  </div>
-                  <p>Fire-grilled chicken, mandarin oranges, toasted almonds, grape tomatoes, raisins, jicama,
-                    radishes and avocado slices, mixed with fresh garden greens.</p>
+              <!-- row end-->
+              <hr class="mb-30 mt-25">
+              <!-- row-->
+              <div class="row">
+                <div class="col-sm-6 col-lg-6 col-md-4 text-center">
+                  <span class=" btn btn-primary" data-glf-cuid="2358326c-c2a5-4079-ba2c-aae592053c29"
+                    data-glf-ruid="7d423505-9ab8-4f42-b6a6-df4cdca99c5d"> ORDER ONLINE</span>
                 </div>
-
-                <div class="menu-item-wrapper">
-                  <div class="menu-item-name-price">
-                    <h5 class="menu-item-name color-three">Lamb Biriyani</h5>
-                    <h5 class="menu-item-price color-three">$2.95</h5>
-                  </div>
-                  <p>Fire-grilled chicken, mandarin oranges, toasted almonds, grape tomatoes, raisins, jicama,
-                    radishes and avocado slices, mixed with fresh garden greens.</p>
-                </div>
-
-                <div class="menu-item-wrapper">
-                  <div class="menu-item-name-price">
-                    <h5 class="menu-item-name color-three">Veg Biriyani</h5>
-                    <h5 class="menu-item-price color-three">$2.95</h5>
-                  </div>
-                  <p>Fire-grilled chicken, mandarin oranges, toasted almonds, grape tomatoes, raisins, jicama,
-                    radishes and avocado slices, mixed with fresh garden greens.</p>
-                </div>
-                <div class="menu-item-wrapper">
-                  <div class="menu-item-name-price">
-                    <h5 class="menu-item-name color-three">Veg Pulao</h5>
-                    <h5 class="menu-item-price color-three">$2.95</h5>
-                  </div>
-                  <p>Fire-grilled chicken, mandarin oranges, toasted almonds, grape tomatoes, raisins, jicama,
-                    radishes and avocado slices, mixed with fresh garden greens.</p>
+                <div class="col-sm-6 col-lg-6 col-md-4 text-center">
+                  <span class=" reservation btn btn-secondary" data-glf-cuid="2358326c-c2a5-4079-ba2c-aae592053c29"
+                    data-glf-ruid="7d423505-9ab8-4f42-b6a6-df4cdca99c5d" data-glf-reservation="true">RESERVE
+                    TABLE</span>
                 </div>
               </div>
             </div>
           </div>
-          <!-- row end -->
+          <div class="col-lg-5 col-sm-12">
+            <div class="restaurant-image-wrapper">
+              <img class="img-fluid" src="images/d_restuarant.jpg" alt="">
+              <div class="restaurant-greeting-wrapper text-right">
+                <h5>Super Star Biriyani</h5>
+                <p>Style &amp; Taste</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-          <div class="row menu-wrap menu-two menu-odd pt-100 pb-90 mb-70">
+    <!-- MENU -->
+    <section id="our-menu" class="our-menu pt-100 pb-90 clearfix bg-five">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <div class="section-title mb-15 clearfix">
+              <h5>Style &amp; Taste</h5>
+              <h2 class="title">Our Super Star Menu</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="row menu-wrap menu-one mb-70 pt-100 pb-90">
+            <div class="col-md-9 menu-image-wrapper" data-bottom-top="transform:translate3d(0px, 0px, 0px)"
+              data-top-bottom="transform:translate3d(0px, -80px, 0px)">
+              <img src="./images/d_menuTwo.jpg" alt="">
+            </div>
             <div class="col-md-5 menu-content-wrapper p-30" data-bottom-top="transform:translate3d(0px, 0px, 0px)"
               data-top-bottom="transform:translate3d(0px, 80px, 0px)">
               <h2 class="menu-title color-one mtb-20">Biriyani</h2>
-
               <div class="menu-item-wrapper">
                 <div class="menu-item-name-price">
                   <h5 class="menu-item-name color-three">Chicken Biriyani</h5>
@@ -260,7 +191,6 @@
                 <p>Fire-grilled chicken, mandarin oranges, toasted almonds, grape tomatoes, raisins, jicama,
                   radishes and avocado slices, mixed with fresh garden greens.</p>
               </div>
-
               <div class="menu-item-wrapper">
                 <div class="menu-item-name-price">
                   <h5 class="menu-item-name color-three">Lamb Biriyani</h5>
@@ -269,7 +199,46 @@
                 <p>Fire-grilled chicken, mandarin oranges, toasted almonds, grape tomatoes, raisins, jicama,
                   radishes and avocado slices, mixed with fresh garden greens.</p>
               </div>
-
+              <div class="menu-item-wrapper">
+                <div class="menu-item-name-price">
+                  <h5 class="menu-item-name color-three">Veg Biriyani</h5>
+                  <h5 class="menu-item-price color-three">$2.95</h5>
+                </div>
+                <p>Fire-grilled chicken, mandarin oranges, toasted almonds, grape tomatoes, raisins, jicama,
+                  radishes and avocado slices, mixed with fresh garden greens.</p>
+              </div>
+              <div class="menu-item-wrapper">
+                <div class="menu-item-name-price">
+                  <h5 class="menu-item-name color-three">Veg Pulao</h5>
+                  <h5 class="menu-item-price color-three">$2.95</h5>
+                </div>
+                <p>Fire-grilled chicken, mandarin oranges, toasted almonds, grape tomatoes, raisins, jicama,
+                  radishes and avocado slices, mixed with fresh garden greens.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="row menu-wrap menu-two menu-odd pt-100 pb-90 mb-70">
+            <div class="col-md-5 menu-content-wrapper p-30" data-bottom-top="transform:translate3d(0px, 0px, 0px)"
+              data-top-bottom="transform:translate3d(0px, 80px, 0px)">
+              <h2 class="menu-title color-one mtb-20">Biriyani</h2>
+              <div class="menu-item-wrapper">
+                <div class="menu-item-name-price">
+                  <h5 class="menu-item-name color-three">Chicken Biriyani</h5>
+                  <h5 class="menu-item-price color-three">$2.95</h5>
+                </div>
+                <p>Fire-grilled chicken, mandarin oranges, toasted almonds, grape tomatoes, raisins, jicama,
+                  radishes and avocado slices, mixed with fresh garden greens.</p>
+              </div>
+              <div class="menu-item-wrapper">
+                <div class="menu-item-name-price">
+                  <h5 class="menu-item-name color-three">Lamb Biriyani</h5>
+                  <h5 class="menu-item-price color-three">$2.95</h5>
+                </div>
+                <p>Fire-grilled chicken, mandarin oranges, toasted almonds, grape tomatoes, raisins, jicama,
+                  radishes and avocado slices, mixed with fresh garden greens.</p>
+              </div>
               <div class="menu-item-wrapper">
                 <div class="menu-item-name-price">
                   <h5 class="menu-item-name color-three">Veg Biriyani</h5>
@@ -291,21 +260,159 @@
               data-top-bottom="transform:translate3d(0px, -80px, 0px)">
               <img src="./images/d_menuTwo.jpg" alt="">
             </div>
-
           </div>
+        </div>
+        <div class="row">
+          <div class="row menu-wrap menu-three mb-70 pt-100 pb-90">
+            <div class="col-md-9 menu-image-wrapper" data-bottom-top="transform:translate3d(0px, 0px, 0px)"
+              data-top-bottom="transform:translate3d(0px, -80px, 0px)">
+              <img src="./images/d_menuTwo.jpg" alt="">
+            </div>
+            <div class="col-md-5 menu-content-wrapper p-30" data-bottom-top="transform:translate3d(0px, 0px, 0px)"
+              data-top-bottom="transform:translate3d(0px, 80px, 0px)">
+              <h2 class="menu-title color-one mtb-20">Biriyani</h2>
+              <div class="menu-item-wrapper">
+                <div class="menu-item-name-price">
+                  <h5 class="menu-item-name color-three">Chicken Biriyani</h5>
+                  <h5 class="menu-item-price color-three">$2.95</h5>
+                </div>
+                <p>Fire-grilled chicken, mandarin oranges, toasted almonds, grape tomatoes, raisins, jicama,
+                  radishes and avocado slices, mixed with fresh garden greens.</p>
+              </div>
+              <div class="menu-item-wrapper">
+                <div class="menu-item-name-price">
+                  <h5 class="menu-item-name color-three">Lamb Biriyani</h5>
+                  <h5 class="menu-item-price color-three">$2.95</h5>
+                </div>
+                <p>Fire-grilled chicken, mandarin oranges, toasted almonds, grape tomatoes, raisins, jicama,
+                  radishes and avocado slices, mixed with fresh garden greens.</p>
+              </div>
+              <div class="menu-item-wrapper">
+                <div class="menu-item-name-price">
+                  <h5 class="menu-item-name color-three">Veg Biriyani</h5>
+                  <h5 class="menu-item-price color-three">$2.95</h5>
+                </div>
+                <p>Fire-grilled chicken, mandarin oranges, toasted almonds, grape tomatoes, raisins, jicama,
+                  radishes and avocado slices, mixed with fresh garden greens.</p>
+              </div>
+              <div class="menu-item-wrapper">
+                <div class="menu-item-name-price">
+                  <h5 class="menu-item-name color-three">Veg Pulao</h5>
+                  <h5 class="menu-item-price color-three">$2.95</h5>
+                </div>
+                <p>Fire-grilled chicken, mandarin oranges, toasted almonds, grape tomatoes, raisins, jicama,
+                  radishes and avocado slices, mixed with fresh garden greens.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="row menu-wrap menu-four menu-odd pt-100 pb-90 mb-70">
+            <div class="col-md-5 menu-content-wrapper p-30" data-bottom-top="transform:translate3d(0px, 0px, 0px)"
+              data-top-bottom="transform:translate3d(0px, 80px, 0px)">
+              <h2 class="menu-title color-one mtb-20">Biriyani</h2>
+              <div class="menu-item-wrapper">
+                <div class="menu-item-name-price">
+                  <h5 class="menu-item-name color-three">Chicken Biriyani</h5>
+                  <h5 class="menu-item-price color-three">$2.95</h5>
+                </div>
+                <p>Fire-grilled chicken, mandarin oranges, toasted almonds, grape tomatoes, raisins, jicama,
+                  radishes and avocado slices, mixed with fresh garden greens.</p>
+              </div>
+              <div class="menu-item-wrapper">
+                <div class="menu-item-name-price">
+                  <h5 class="menu-item-name color-three">Lamb Biriyani</h5>
+                  <h5 class="menu-item-price color-three">$2.95</h5>
+                </div>
+                <p>Fire-grilled chicken, mandarin oranges, toasted almonds, grape tomatoes, raisins, jicama,
+                  radishes and avocado slices, mixed with fresh garden greens.</p>
+              </div>
+              <div class="menu-item-wrapper">
+                <div class="menu-item-name-price">
+                  <h5 class="menu-item-name color-three">Veg Biriyani</h5>
+                  <h5 class="menu-item-price color-three">$2.95</h5>
+                </div>
+                <p>Fire-grilled chicken, mandarin oranges, toasted almonds, grape tomatoes, raisins, jicama,
+                  radishes and avocado slices, mixed with fresh garden greens.</p>
+              </div>
+              <div class="menu-item-wrapper">
+                <div class="menu-item-name-price">
+                  <h5 class="menu-item-name color-three">Veg Pulao</h5>
+                  <h5 class="menu-item-price color-three">$2.95</h5>
+                </div>
+                <p>Fire-grilled chicken, mandarin oranges, toasted almonds, grape tomatoes, raisins, jicama,
+                  radishes and avocado slices, mixed with fresh garden greens.</p>
+              </div>
+            </div>
+            <div class="col-md-9 offset-md-4 menu-image-wrapper" data-bottom-top="transform:translate3d(0px, 0px, 0px)"
+              data-top-bottom="transform:translate3d(0px, -80px, 0px)">
+              <img src="./images/d_menuTwo.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+    </section>
+  </main>
 
+  <!-- FOOTER -->
+  <footer class="bg-one">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 section-wrapper contact-info pt-20">
+          <div class="vertical-align">
+            <h6>Contact Information</h6>
+            <p><span><i class="fa fa-map-marker"></i></span><span>Unit 6/9, Anderson Road, Forrestfield</span></p>
+            <p><span><i class="fa fa-envelope-o"></i></span><span>044 248 948</span></p>
+            <p><span><i class="fa fa-phone"></i></span><span>ashwin@gmail.com</span></p>
+          </div>
         </div>
+        <div class="col-lg-4 col-md-6 section-wrapper footer-logo text-center pt-20">
+          <div class="logo-wrapper">
+            <a href="#">
+              <img src="images/Desktop Logo.png" alt="Desktop Site Logo" />
+            </a>
+          </div>
+          <div class="side-nav__social-wrapper">
+            <ul class=>
+              <li>
+                <a href="#" class="fa fa-facebook"></a>
+              </li>
+              <li>
+                <a href="#" class="fa fa-twitter"></a>
+              </li>
+              <li>
+                <a href="#" class="fa fa-linkedin"></a>
+              </li>
+              <li>
+                <a href="#" class="fa fa-google-plus"></a>
+              </li>
+            </ul>
+          </div>
         </div>
+        <div class="col-lg-4 col-md-6 section-wrapper hours-info pt-20">
+          <div class="vertical-align">
+            <h6>Opening Hours</h6>
+            <p><span>Monday :</span><span>Closed</span></p>
+            <p><span>Tue-Wed :</span><span>9AM - 10PM</span></p>
+            <p><span>Thu-Fri :</span> <span>9AM - 10PM</span></p>
+            <p><span>Sat-Sun :</span> <span>9AM - 10PM</span></p>
+          </div>
         </div>
-      </section>
-
-    </main>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12 copyright-section">
+          <p>Copyright © 2020 Super Star Biriyani Cafe. Developed by Ashwin<a class="color-four"
+              href="tel:+61 422 248">(0422 248 948)</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="./script/jquery.js"></script>
 <script src="./script/skrollr.js"></script>
 <script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async></script>
-
 <script src="./script/script.js"></script>
 
 </html>

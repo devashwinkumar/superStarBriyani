@@ -8,7 +8,7 @@
   width: 50px;
   height: 35px;
   cursor: pointer;
-  position: absolute;
+  position: fixed;
   left: 2%;
   top: 4%;
   z-index: 1;
@@ -16,7 +16,7 @@
     align-self: flex-start;
     height: 6px;
     width: 100%;
-    background: #fff;
+    background: $cOne;
   }
   .meat {
     width: 75%;
@@ -86,9 +86,11 @@
     text-align: center;
     width: 100%;
     text-transform: uppercase;
-    font-family: Oswald, sans-serif;
+
+    font-family: $fTwo;
+
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 800;
     letter-spacing: 1px;
     a {
       padding: 15px;

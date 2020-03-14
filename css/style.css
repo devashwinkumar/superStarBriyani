@@ -2,7 +2,24 @@
   display: none;
 }
 
-h5 {
+html {
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  height: auto !important;
+}
+
+.f-left {
+  float: left;
+}
+
+.f-right {
+  float: right;
+}
+
+h5,
+h6 {
   color: #ffd300;
   font-family: "Raleway", sans-serif;
 }
@@ -45,12 +62,20 @@ ul li {
   color: #f5f5f5 !important;
 }
 
-.bg-color-five {
+.bg-five {
   background-color: #f5f5f5 !important;
+}
+
+.bg-one {
+  background-color: #222222;
 }
 
 .p-30 {
   padding: 30px;
+}
+
+.pt-20 {
+  padding-top: 20px;
 }
 
 .pt-100 {
@@ -102,7 +127,7 @@ ul li {
   width: 50px;
   height: 35px;
   cursor: pointer;
-  position: absolute;
+  position: fixed;
   left: 2%;
   top: 4%;
   z-index: 1;
@@ -113,7 +138,7 @@ ul li {
       align-self: flex-start;
   height: 6px;
   width: 100%;
-  background: #fff;
+  background: #ffd300;
 }
 
 .hamburger .meat {
@@ -202,9 +227,9 @@ ul li {
   text-align: center;
   width: 100%;
   text-transform: uppercase;
-  font-family: Oswald, sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 800;
   letter-spacing: 1px;
 }
 
@@ -329,6 +354,7 @@ ul li {
   color: #ffffff !important;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
+  cursor: pointer;
 }
 
 .btn-secondary:hover,
@@ -338,6 +364,7 @@ ul li {
   color: #ffd300 !important;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
+  cursor: pointer;
 }
 
 ul li {
@@ -415,5 +442,48 @@ ul li span {
 .menu-odd .menu-content-wrapper {
   left: 15px;
   z-index: 2;
+}
+
+footer .section-wrapper {
+  height: 320px;
+  display: table;
+}
+
+footer .section-wrapper .vertical-align {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+footer h6 {
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+footer p {
+  color: #ffffff;
+  font-size: 80%;
+  text-align: center;
+}
+
+footer p span {
+  width: 49%;
+  display: inline-block;
+  text-align: center;
+}
+
+footer img {
+  max-width: 60%;
+}
+
+footer .contact-info p span {
+  width: 80%;
+}
+
+footer .contact-info p span:first-of-type {
+  width: 19%;
+}
+
+footer .copyright-section p {
+  font-size: 60%;
 }
 /*# sourceMappingURL=style.css.map */

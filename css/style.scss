@@ -5,7 +5,20 @@
 .nooo {
   display: none;
 }
-h5 {
+html {
+  scroll-behavior: smooth;
+}
+.wrapper {
+  height: auto !important;
+}
+.f-left {
+  float: left;
+}
+.f-right {
+  float: right;
+}
+h5,
+h6 {
   color: $cOne;
   font-family: $fThree;
 }
@@ -38,13 +51,19 @@ ul {
 .color-five {
   color: $cFive !important;
 }
-.bg-color-five {
+.bg-five {
   background-color: $cFive !important;
+}
+.bg-one {
+  background-color: $cThree;
 }
 
 //Padding
 .p-30 {
   padding: 30px;
+}
+.pt-20 {
+  padding-top: 20px;
 }
 .pt-100 {
   padding-top: 100px;
@@ -78,3 +97,4 @@ ul {
 @import "./button";
 @import "./aboutUs";
 @import "./menu";
+@import "./footer";
