@@ -14,12 +14,6 @@
   outline: none !important;
   box-shadow: none !important;
 }
-.btn:hover::before,
-.btn:hover::after {
-  font-family: FontAwesome;
-  content: "\f005";
-  margin: 0 5px;
-}
 
 .btn-primary:hover,
 .btn-primary:active,
