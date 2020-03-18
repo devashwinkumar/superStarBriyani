@@ -22,3 +22,12 @@ $(document).ready(function() {
     $(this).addClass("active");
   });
 });
+
+$(document).scroll(function() {
+  var heroHeight = $(".hero-landing").innerHeight();
+  // console.log(heroHeight);
+  $(".hamburger").toggleClass(
+    "dark",
+    $(this).scrollTop() > parseInt(heroHeight)
+  );
+});

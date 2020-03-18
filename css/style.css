@@ -153,6 +153,10 @@ ul li {
   transition: all 400ms ease-in-out;
 }
 
+.hamburger.dark div {
+  background: #222222;
+}
+
 @-webkit-keyframes burger-hover {
   0% {
     width: 100%;

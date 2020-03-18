@@ -26,6 +26,11 @@
     width: 50%;
     transition: all 400ms ease-in-out;
   }
+  &.dark {
+    div {
+      background: $cThree;
+    }
+  }
 }
 
 @keyframes burger-hover {
