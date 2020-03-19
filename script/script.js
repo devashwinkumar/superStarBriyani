@@ -23,11 +23,20 @@ $(document).ready(function() {
   });
 });
 
+var heroHeight = $(".hero-landing").innerHeight();
+var footPosition = $("footer").offset().top;
+
+console.log(heroHeight);
+console.log(footPosition);
 $(document).scroll(function() {
-  var heroHeight = $(".hero-landing").innerHeight();
   // console.log(heroHeight);
-  $(".hamburger").toggleClass(
-    "dark",
-    $(this).scrollTop() > parseInt(heroHeight)
-  );
+
+  var scroll = $(window).scrollTop();
+  console.log(scroll);
+  if (scroll >= heroHeight && scroll < footPosition) {
+    $(".hamburger").addClass("dark");
+  } else {
+    $(".hamburger").removeClass("dark");
+  }
+  // );
 });

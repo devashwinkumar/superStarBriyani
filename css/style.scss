@@ -7,9 +7,11 @@
 }
 html {
   scroll-behavior: smooth;
+  position: relative;
 }
 .wrapper {
   height: auto !important;
+  position: relative;
 }
 .f-left {
   float: left;

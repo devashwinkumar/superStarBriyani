@@ -4,10 +4,12 @@
 
 html {
   scroll-behavior: smooth;
+  position: relative;
 }
 
 .wrapper {
   height: auto !important;
+  position: relative;
 }
 
 .f-left {
@@ -130,7 +132,7 @@ ul li {
   position: fixed;
   left: 2%;
   top: 4%;
-  z-index: 1;
+  z-index: 5;
 }
 
 .hamburger div {
@@ -241,7 +243,8 @@ ul li {
   padding: 15px;
   line-height: 15px;
   display: block;
-  color: #ffffff;
+  color: #ffffff !important;
+  cursor: pointer;
 }
 
 .side-nav__nav-links li a.active {
@@ -327,6 +330,7 @@ ul li {
   outline: none;
   padding: 12px 30px;
   border-color: transparent !important;
+  cursor: pointer;
 }
 
 .btn-primary {
@@ -485,47 +489,6 @@ footer .copyright-section p {
 }
 
 /*Mobile   Portrait */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-  .about-us-wrapper .pr-75 {
-    padding-right: 0;
-  }
-  .about-us-wrapper .mt-25 {
-    margin-top: 0;
-    text-align: center;
-  }
-  .about-us-wrapper .mt-25 ul {
-    margin-bottom: 0;
-  }
-  .about-us-wrapper hr {
-    margin-top: 10px !important;
-  }
-  .about-us-wrapper .btn,
-  .about-us-wrapper hr {
-    display: none;
-  }
-  .about-us-wrapper .restaurant-image-wrapper {
-    margin-top: 30px;
-  }
-  .about-us-wrapper .restaurant-image-wrapper::before, .about-us-wrapper .restaurant-image-wrapper::after {
-    display: none;
-  }
-  .our-menu .row {
-    margin-bottom: 30px;
-  }
-  .menu-wrap {
-    padding: 0;
-    max-width: 100%;
-    margin: 0;
-  }
-  .menu-wrap .menu-content-wrapper {
-    position: relative;
-    right: 0;
-    left: 0;
-    padding: 20px;
-  }
-}
-
-/* Mobile Landscape */
 @media only screen and (min-width: 768px) {
   .btn:hover::before,
   .btn:hover::after {
